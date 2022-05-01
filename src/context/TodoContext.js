@@ -215,6 +215,8 @@ export const TodoProvider = ({ children }) => {
     localStorage.setItem('completedTodos', JSON.stringify([]))
 
     inputEl.focus()
+    setTodo('')
+    setEditMode(false)
   }
 
   const hoverOnTitle = (e) => {
